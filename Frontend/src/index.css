@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f1ecec;
+
+
+}
+
+
+.todo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  /* height: 70vh; */
+  margin: 0 auto;
+  /* scrollbar-width: thin; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: rgba(147, 141, 141, 0.8);
+  border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  /* background-color: #4caf50; */
+  border-radius: 10px;
+  border: 2px solid rgba(46, 46, 46, 0.8);
+}
+.todo-input,
+.todo-edit-input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.todo-button,
+.todo-save-button,
+.todo-remove-button,
+.todo-edit-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-button:hover,
+.todo-save-button:hover,
+.todo-remove-button:hover,
+.todo-edit-button:hover {
+  background-color: #45a049;
+}
+
+.todo-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todo-item input {
+  width: calc(100% - 140px);
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.todo-item button {
+  flex-grow: 1;
+  /* position: relative; */
+  /* right: %; */
+  margin-left: 10px;
+}
+
+.text {
+  flex: 1;
+}
+
+.todo-note {
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
+  text-align: center;
+}
+
+.logout-button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
